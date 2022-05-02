@@ -1,0 +1,889 @@
+2022-04-25 21:25:12.097 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 100324 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-25 21:25:12.103 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:25:12.163 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-25 21:25:12.163 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-25 21:25:13.533 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:25:13.541 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:25:13.541 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:25:13.542 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:25:13.628 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:25:13.628 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1464 ms
+2022-04-25 21:25:14.176 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:25:14.309 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-25 21:25:14.487 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-25 21:25:14.499 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:25:14.515 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 21:25:14.523 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.87 seconds (JVM running for 4.483)
+2022-04-25 21:25:26.767 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 21:25:26.767 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-25 21:25:26.775 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2022-04-25 21:25:26.800 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-25 21:25:26.817 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-25 21:25:26.940 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-25 21:25:26.971 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-25 21:25:26.992 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-25 21:25:27.306 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-25 21:25:27.306 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-25 21:25:27.307 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-25 21:25:27.309 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-25 21:25:27.309 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-25 21:25:27.417 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-25 21:25:27.421 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:25:27.422 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:25:27.423 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:25:27.424 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:25:27.425 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-25 21:25:27.426 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-25 21:25:27.427 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-25 21:25:27.427 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-25 21:25:27.428 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-25 21:25:27.429 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-25 21:25:27.430 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-25 21:25:27.431 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-25 21:25:27.432 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-25 21:25:27.433 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-25 21:25:27.433 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-25 21:25:27.434 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-25 21:25:27.435 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:25:27.435 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:25:27.436 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-25 21:25:27.436 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index
+2022-04-25 21:25:27.555 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:25:27.558 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:26:22.565 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 103152 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-25 21:26:22.568 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:26:22.638 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-25 21:26:22.639 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-25 21:26:23.666 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:26:23.672 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:26:23.672 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:26:23.673 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:26:23.803 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:26:23.803 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1164 ms
+2022-04-25 21:26:24.317 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:26:24.437 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-25 21:26:24.613 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-25 21:26:24.625 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:26:24.641 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 21:26:24.649 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.527 seconds (JVM running for 4.274)
+2022-04-25 21:27:04.284 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 21:27:04.284 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-25 21:27:04.293 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2022-04-25 21:27:04.318 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-25 21:27:04.334 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-25 21:27:04.869 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-25 21:27:04.899 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-25 21:27:04.914 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-25 21:27:06.428 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-25 21:27:06.428 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-25 21:27:06.429 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-25 21:27:06.430 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-25 21:27:06.431 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-25 21:27:06.500 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-25 21:27:06.504 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:27:06.505 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:27:06.514 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:27:06.515 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:27:06.515 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-25 21:27:06.517 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-25 21:27:06.517 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-25 21:27:06.518 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-25 21:27:06.519 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-25 21:27:06.520 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-25 21:27:06.521 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-25 21:27:06.522 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-25 21:27:06.523 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-25 21:27:06.524 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-25 21:27:06.525 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-25 21:27:06.526 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-25 21:27:06.527 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:27:06.527 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:27:06.527 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-25 21:27:06.528 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index
+2022-04-25 21:27:06.618 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:27:06.621 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:28:12.938 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 93688 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-25 21:28:12.940 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:28:12.991 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-25 21:28:12.991 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-25 21:28:14.045 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:28:14.051 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:28:14.052 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:28:14.052 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:28:14.133 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:28:14.133 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1142 ms
+2022-04-25 21:28:14.674 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:28:14.819 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-25 21:28:15.036 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-25 21:28:15.049 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:28:15.065 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 21:28:15.074 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.625 seconds (JVM running for 4.109)
+2022-04-25 21:28:20.349 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 21:28:20.349 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-25 21:28:20.358 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2022-04-25 21:28:20.381 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-25 21:28:20.395 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-25 21:28:20.482 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-25 21:28:20.513 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-25 21:28:20.529 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-25 21:28:20.810 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-25 21:28:20.810 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-25 21:28:20.811 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-25 21:28:20.812 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-25 21:28:20.813 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-25 21:28:20.900 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-25 21:28:20.904 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:28:20.906 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:28:20.907 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:28:20.908 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:28:20.909 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-25 21:28:20.911 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-25 21:28:20.911 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-25 21:28:20.923 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-25 21:28:20.924 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-25 21:28:20.926 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-25 21:28:20.927 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-25 21:28:20.927 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-25 21:28:20.928 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-25 21:28:20.929 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-25 21:28:20.930 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-25 21:28:20.931 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-25 21:28:20.932 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:28:20.932 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:28:20.932 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-25 21:28:20.933 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index
+2022-04-25 21:28:21.028 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:28:21.030 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:29:31.162 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 96312 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-25 21:29:31.165 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:29:31.222 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-25 21:29:31.222 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-25 21:29:32.243 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:29:32.250 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:29:32.250 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:29:32.250 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:29:32.332 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:29:32.332 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1110 ms
+2022-04-25 21:29:32.851 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:29:32.972 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-25 21:29:33.144 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-25 21:29:33.156 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:29:33.172 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 21:29:33.179 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.457 seconds (JVM running for 3.912)
+2022-04-25 21:29:36.702 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 21:29:36.702 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-25 21:29:36.711 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2022-04-25 21:29:36.735 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-25 21:29:36.751 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-25 21:29:36.860 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-25 21:29:36.891 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-25 21:29:36.907 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-25 21:29:37.524 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-25 21:29:37.524 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-25 21:29:37.525 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-25 21:29:37.526 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-25 21:29:37.526 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-25 21:29:37.609 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-25 21:29:37.613 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:29:37.614 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:29:37.615 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:29:37.616 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:29:37.617 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-25 21:29:37.619 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-25 21:29:37.619 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-25 21:29:37.644 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-25 21:29:37.645 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-25 21:29:37.646 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-25 21:29:37.647 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-25 21:29:37.649 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-25 21:29:37.650 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-25 21:29:37.651 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-25 21:29:37.652 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-25 21:29:37.653 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-25 21:29:37.655 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:29:37.656 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:29:37.657 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-25 21:29:37.657 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index
+2022-04-25 21:29:37.767 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:29:37.781 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:31:59.088 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 95560 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-25 21:31:59.091 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:31:59.189 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-25 21:31:59.189 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-25 21:32:00.652 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:32:00.658 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:32:00.659 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:32:00.659 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:32:00.771 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:32:00.772 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1583 ms
+2022-04-25 21:32:01.475 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:32:01.653 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-25 21:32:01.885 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-25 21:32:01.908 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:32:01.928 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 21:32:01.941 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 3.712 seconds (JVM running for 5.796)
+2022-04-25 21:32:05.905 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 21:32:05.906 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-25 21:32:05.919 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2022-04-25 21:32:05.957 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-25 21:32:05.987 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-25 21:32:07.661 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-25 21:32:07.712 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-25 21:32:07.752 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-25 21:32:07.873 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-25 21:32:07.874 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-25 21:32:07.879 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-25 21:32:07.883 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-25 21:32:07.884 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-25 21:32:07.925 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-25 21:32:07.936 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:32:07.939 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:32:07.942 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:32:07.946 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:32:07.947 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-25 21:32:07.949 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-25 21:32:07.949 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-25 21:32:07.950 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-25 21:32:07.951 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-25 21:32:08.011 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-25 21:32:08.014 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-25 21:32:08.015 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-25 21:32:08.017 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-25 21:32:08.017 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-25 21:32:08.018 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-25 21:32:08.020 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-25 21:32:08.021 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:32:08.022 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:32:08.023 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-25 21:32:08.024 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index
+2022-04-25 21:32:08.187 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:32:08.192 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:32:14.718 [http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "admin/login": Error resolving template [admin/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:32:14.720 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/login], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-25 21:32:41.710 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 80612 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-25 21:32:41.714 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:32:41.774 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-25 21:32:41.774 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-25 21:32:42.850 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:32:42.856 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:32:42.856 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:32:42.857 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:32:42.938 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:32:42.939 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1165 ms
+2022-04-25 21:32:43.504 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:32:43.575 [restartedMain] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-25 21:32:44.013 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-25 21:32:44.026 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:32:44.042 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 21:32:44.050 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.799 seconds (JVM running for 4.352)
+2022-04-25 21:32:47.272 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 21:32:47.273 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-25 21:32:47.280 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms

@@ -1,0 +1,85 @@
+2022-04-25 21:33:40.166 [main] INFO  com.lu.BlogApplication - Starting BlogApplication v0.0.1-SNAPSHOT on DESKTOP-O6H0IHG with PID 100748 (D:\shangguigu\bbb\blog-master\target\blog-0.0.1-SNAPSHOT.jar started by dell in D:\shangguigu\bbb\blog-master\target)
+2022-04-25 21:33:40.171 [main] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:33:43.298 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:33:43.311 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:33:43.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:33:43.313 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:33:43.405 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:33:43.406 [main] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3144 ms
+2022-04-25 21:33:44.570 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:33:44.716 [main] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-25 21:33:45.105 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:33:45.123 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-04-25 21:33:45.124 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:33:45.133 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:33:45.135 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-25 21:33:45.143 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:33:45.145 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:33:45.157 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-25 21:33:45.161 [main] ERROR o.s.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-04-25 21:34:12.090 [main] INFO  com.lu.BlogApplication - Starting BlogApplication v0.0.1-SNAPSHOT on DESKTOP-O6H0IHG with PID 69388 (D:\shangguigu\bbb\blog-master\target\blog-0.0.1-SNAPSHOT.jar started by dell in D:\shangguigu\bbb\blog-master\target)
+2022-04-25 21:34:12.093 [main] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-25 21:34:14.867 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 21:34:14.885 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:34:14.886 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 21:34:14.887 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-25 21:34:14.981 [main] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 21:34:14.981 [main] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2797 ms
+2022-04-25 21:34:16.081 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 21:34:16.246 [main] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-25 21:34:16.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-25 21:34:16.696 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 21:34:16.715 [main] INFO  com.lu.BlogApplication - Started BlogApplication in 5.283 seconds (JVM running for 5.828)
+2022-04-25 21:34:27.975 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 21:34:27.976 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-25 21:34:27.999 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2022-04-25 21:34:28.060 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-25 21:34:28.099 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-25 21:34:28.546 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-25 21:34:28.619 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-25 21:34:28.653 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-25 21:34:28.939 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-25 21:34:28.939 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-25 21:34:28.940 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-25 21:34:28.942 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-25 21:34:28.943 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-25 21:34:29.009 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-25 21:34:29.013 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:34:29.015 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:34:29.016 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:34:29.017 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-25 21:34:29.018 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-25 21:34:29.021 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-25 21:34:29.022 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-25 21:34:29.023 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-25 21:34:29.024 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-25 21:34:29.026 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-25 21:34:29.028 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-25 21:34:29.029 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-25 21:34:29.030 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-25 21:34:29.031 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-25 21:34:29.032 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-25 21:34:29.036 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-25 21:34:29.038 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:34:29.038 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-25 21:34:29.039 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-25 21:34:29.039 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index

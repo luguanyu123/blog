@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lu.mapper.UserMapper">
+
+    <sql id="Base_Column_List">
+        id, avatar, create_time, email, nickname, password, type, update_time, username
+    </sql>
+
+    <select id="findByUsernameAndPassword" parameterType="com.lu.po.User" resultType="com.lu.po.User">
+        select <include refid="Base_Column_List" />
+        from t_user
+        where username = #{username,jdbcType=VARCHAR}
+        and password = #{password,jdbcType=VARCHAR}
+    </select>
+
+    <select id="findByUsername" parameterType="java.lang.String" resultType="com.lu.po.User">
+        select <include refid="Base_Column_List" />
+        from t_user
+        where username = #{username,jdbcType=VARCHAR}
+    </select>
+</mapper>

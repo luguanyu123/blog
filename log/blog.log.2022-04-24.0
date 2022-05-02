@@ -1,0 +1,243 @@
+2022-04-24 15:52:12.796 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 72176 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 15:52:12.802 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 15:52:12.881 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 15:52:12.882 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 15:52:13.978 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 15:52:13.985 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 15:52:13.985 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 15:52:13.985 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 15:52:14.066 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 15:52:14.066 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1183 ms
+2022-04-24 15:52:14.658 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 15:52:14.737 [restartedMain] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-24 15:52:15.080 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 15:52:15.097 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 15:52:15.113 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 15:52:15.121 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.796 seconds (JVM running for 4.253)
+2022-04-24 15:54:25.533 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-24 15:58:36.108 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 95940 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 15:58:36.112 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 15:58:36.171 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 15:58:36.171 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 15:58:37.505 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 15:58:37.514 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 15:58:37.515 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 15:58:37.515 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 15:58:37.633 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 15:58:37.633 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1462 ms
+2022-04-24 15:58:38.464 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 15:58:38.549 [restartedMain] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-24 15:58:38.896 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 15:58:38.916 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 15:58:38.940 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 15:58:38.951 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 3.3 seconds (JVM running for 4.942)
+2022-04-24 15:59:00.507 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 97572 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 15:59:00.510 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 15:59:00.565 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 15:59:00.566 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 15:59:01.593 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 15:59:01.599 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 15:59:01.599 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 15:59:01.599 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 15:59:01.683 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 15:59:01.683 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1117 ms
+2022-04-24 15:59:02.213 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 15:59:02.288 [restartedMain] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-24 15:59:02.609 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 15:59:02.621 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 15:59:02.637 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 15:59:02.645 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.552 seconds (JVM running for 4.05)
+2022-04-24 15:59:15.369 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 15:59:15.370 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-24 15:59:15.378 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2022-04-24 15:59:15.405 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-24 15:59:15.422 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-24 15:59:15.988 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-24 15:59:16.027 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-24 15:59:16.046 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-24 15:59:16.847 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-24 15:59:16.847 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-24 15:59:16.848 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-24 15:59:16.853 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-24 15:59:16.854 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-24 15:59:16.945 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-24 15:59:16.949 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 15:59:16.951 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 15:59:16.952 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 15:59:16.953 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 15:59:16.953 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-24 15:59:16.955 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-24 15:59:16.955 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-24 15:59:17.054 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-24 15:59:17.055 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-24 15:59:17.056 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-24 15:59:17.058 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-24 15:59:17.059 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-24 15:59:17.060 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-24 15:59:17.061 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-24 15:59:17.062 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-24 15:59:17.063 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-24 15:59:17.064 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-24 15:59:17.065 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-24 15:59:17.065 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-24 15:59:17.065 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index
+2022-04-24 16:21:04.514 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 95300 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 16:21:04.612 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 16:21:04.648 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 16:21:04.649 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 16:21:05.681 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 16:21:05.687 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:21:05.687 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 16:21:05.688 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 16:21:05.771 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 16:21:05.772 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1123 ms
+2022-04-24 16:21:06.323 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 16:21:06.447 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-24 16:21:06.650 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 16:21:06.665 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:21:06.689 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 16:21:06.702 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.623 seconds (JVM running for 4.094)
+2022-04-24 16:22:01.712 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 97744 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 16:22:01.715 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 16:22:01.798 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 16:22:01.799 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 16:22:03.153 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 16:22:03.161 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:22:03.161 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 16:22:03.161 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 16:22:03.252 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 16:22:03.252 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1453 ms
+2022-04-24 16:22:03.792 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 16:22:03.927 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-24 16:22:04.110 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 16:22:04.123 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:22:04.139 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 16:22:04.146 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 3.05 seconds (JVM running for 4.901)
+2022-04-24 16:23:14.527 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 95688 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 16:23:14.530 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 16:23:14.588 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 16:23:14.589 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 16:23:15.640 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 16:23:15.647 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:23:15.647 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 16:23:15.647 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 16:23:15.728 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 16:23:15.729 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1140 ms
+2022-04-24 16:23:16.253 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 16:23:16.336 [restartedMain] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-24 16:23:16.656 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 16:23:16.669 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:23:16.685 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 16:23:16.693 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.583 seconds (JVM running for 4.055)
+2022-04-24 16:23:52.754 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 89740 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 16:23:52.758 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 16:23:52.803 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 16:23:52.804 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 16:23:53.847 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 16:23:53.853 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:23:53.854 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 16:23:53.854 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 16:23:53.936 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 16:23:53.936 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1132 ms
+2022-04-24 16:23:54.466 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 16:23:54.539 [restartedMain] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-24 16:23:54.859 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 16:23:54.873 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:23:54.889 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 16:23:54.897 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 2.571 seconds (JVM running for 4.045)
+2022-04-24 16:24:36.790 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 16:24:36.791 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-24 16:24:36.802 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2022-04-24 16:24:36.857 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-24 16:24:36.877 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-24 16:24:37.913 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-24 16:24:37.954 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-24 16:24:37.972 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-24 16:24:38.758 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-24 16:24:38.758 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-24 16:24:38.759 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-24 16:24:38.761 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-24 16:24:38.762 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-24 16:24:38.868 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-24 16:24:38.875 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:24:38.877 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:24:38.878 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:24:38.879 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:24:38.879 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-24 16:24:38.881 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-24 16:24:38.882 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-24 16:24:38.900 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-24 16:24:38.901 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-24 16:24:38.902 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-24 16:24:38.903 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-24 16:24:38.904 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-24 16:24:38.905 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-24 16:24:38.906 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-24 16:24:38.906 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-24 16:24:38.907 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-24 16:24:38.908 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-24 16:24:38.909 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-24 16:24:38.909 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-24 16:24:38.909 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index
+2022-04-24 16:25:01.314 [restartedMain] INFO  com.lu.BlogApplication - Starting BlogApplication on DESKTOP-O6H0IHG with PID 76868 (D:\shangguigu\bbb\blog-master\target\classes started by dell in D:\shangguigu\bbb\blog-master)
+2022-04-24 16:25:01.318 [restartedMain] INFO  com.lu.BlogApplication - The following profiles are active: dev
+2022-04-24 16:25:01.366 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-24 16:25:01.366 [restartedMain] INFO  o.s.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-24 16:25:02.627 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-24 16:25:02.634 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:25:02.634 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-24 16:25:02.634 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-04-24 16:25:02.719 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-24 16:25:02.719 [restartedMain] INFO  o.s.b.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1353 ms
+2022-04-24 16:25:03.336 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-24 16:25:03.411 [restartedMain] INFO  o.s.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-04-24 16:25:03.809 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-04-24 16:25:03.827 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-24 16:25:03.851 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 16:25:03.867 [restartedMain] INFO  com.lu.BlogApplication - Started BlogApplication in 3.028 seconds (JVM running for 4.584)
+2022-04-24 16:25:12.824 [http-nio-8080-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 16:25:12.825 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-24 16:25:12.832 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2022-04-24 16:25:12.860 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lu.web.IndexController.indexPage', args=[1, {}]}
+2022-04-24 16:25:12.876 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-24 16:25:13.064 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-24 16:25:13.096 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==>  Preparing: SELECT count(0) FROM t_blog b LEFT OUTER JOIN t_type t ON b.type_id = t.id JOIN t_user u ON b.user_id = u.id WHERE published = 1
+2022-04-24 16:25:13.112 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - ==> Parameters: 
+2022-04-24 16:25:13.440 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==    Columns: count(0)
+2022-04-24 16:25:13.440 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==        Row: 8
+2022-04-24 16:25:13.440 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog_COUNT - <==      Total: 1
+2022-04-24 16:25:13.442 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==>  Preparing: select b.* ,t.id as id1,t.name, u.id as id2,u.avatar,u.nickname, u.email from t_blog b left outer join t_type t on b.type_id = t.id join t_user u on b.user_id=u.id where published=1 ORDER BY b.create_time DESC LIMIT ?
+2022-04-24 16:25:13.442 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - ==> Parameters: 4(Integer)
+2022-04-24 16:25:13.508 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==    Columns: id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id1, name, id2, avatar, nickname, email
+2022-04-24 16:25:13.512 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 10, javase, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:25:13.513 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 11, mybatis, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:25:13.514 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 8, springboot, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:25:13.515 [http-nio-8080-exec-1] TRACE com.lu.mapper.BlogMapper.findPublishedBlog - <==        Row: 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 9, springmvc, 1, D:\shangguigu\image\myavatar.jpg, lu, 834808263@qq.com
+2022-04-24 16:25:13.516 [http-nio-8080-exec-1] DEBUG com.lu.mapper.BlogMapper.findPublishedBlog - <==      Total: 4
+2022-04-24 16:25:13.518 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==>  Preparing: select *, b.id as id1, u.id as id2 from t_type t LEFT JOIN t_blog b on b.type_id = t.id LEFT JOIN t_user u ON b.user_id=u.id
+2022-04-24 16:25:13.518 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - ==> Parameters: 
+2022-04-24 16:25:13.521 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==    Columns: id, name, id, appreciation, commentabled, content, create_time, flag, first_picture, published, recommend, share_statement, title, update_time, views, type_id, user_id, description, id, avatar, create_time, email, nickname, password, type, update_time, username, id1, id2
+2022-04-24 16:25:13.521 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 8, 1, 1, <<BLOB>>, 2022-04-01 16:19:39.873000, 转载, https://www.sohu.com/a/197915708_657479, 1, 1, 0, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 2022-04-08 19:04:32.075000, 86, 6, 1, Error creating bean with name ‘sqlSessionFactory‘ defined in class path reso, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 8, 1
+2022-04-24 16:25:13.523 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 6, 遇到的异常, 9, 1, 1, <<BLOB>>, 2022-04-04 00:28:22.403000, 转载, https://unsplash.it/100/100?image=1005, 1, 1, 0, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 2022-04-08 19:04:19.967000, 11, 6, 1, Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.5.2:install (default-cli) 的解决, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 9, 1
+2022-04-24 16:25:13.524 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 7, spring, 10, 1, 1, <<BLOB>>, 2022-04-08 10:59:10.559000, 转载, , 1, 0, 0, 什么是ioc, 2022-04-08 19:04:25.714000, 1, 7, 1, 什么是ioc, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 10, 1
+2022-04-24 16:25:13.525 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 8, springboot, 13, 1, 1, <<BLOB>>, 2022-04-08 19:06:43.434000, 转载, , 1, 0, 0, Spring Boot 项目工程结构, 2022-04-09 18:54:42.039000, 0, 8, 1, src/main/java路径：主要编写业务程序
+src/main/resources路径：存放静态文件和配置文件
+src/test/java路径：主要编写测试程序, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 13, 1
+2022-04-24 16:25:13.527 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 11, 1, 1, <<BLOB>>, 2022-04-08 19:03:48.667000, 转载, , 1, 0, 0, Springmvc架构原理解析, 2022-04-08 19:04:06.759000, 2, 9, 1, Springmvc架构原理解析, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 11, 1
+2022-04-24 16:25:13.527 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 9, springmvc, 12, 1, 1, <<BLOB>>, 2022-04-08 19:05:25.600000, 转载, , 1, 1, 1, SpringMVC常用注解, 2022-04-08 19:05:25.600000, 0, 9, 1, SpringMVC常用注解, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 12, 1
+2022-04-24 16:25:13.528 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 10, javase, 15, 1, 1, <<BLOB>>, 2022-04-08 19:10:54.017000, 转载, , 1, 0, 0, 反射, 2022-04-09 18:55:00.092000, 10, 10, 1, 主要是指程序可以访问、检测和修改它本身状态或行为的一种能力Reflection是Java被视为动态（或准动态）语言的一个关键性质。这个机制允许程序在运行时透过Reflection APIs取得任何一个已知名称的class的内部信息。, 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 15, 1
+2022-04-24 16:25:13.529 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 11, mybatis, 14, 1, 1, <<BLOB>>, 2022-04-08 19:07:28.963000, 转载, , 1, 0, 0, mybatis简要, 2022-04-09 18:54:53.654000, 4, 11, 1, mybatis是什么？有什么特点？ 它是一款半自动的ORM持久层框架，具有较高的SQL灵活性，支持高级映射(一对一，一对多)，动态SQL，延迟加载和缓存等特性，但它的数据库无关性较低 , 1, D:\shangguigu\image\myavatar.jpg, 2022-03-31 21:21:39, 834808263@qq.com, lu, 8a546497c3157c236f35f861b4b0b075, 123456, 2022-03-01 21:22:32, lu, 14, 1
+2022-04-24 16:25:13.530 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 12, mysql, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-24 16:25:13.531 [http-nio-8080-exec-1] TRACE com.lu.mapper.TypeMapper.findAllType - <==        Row: 13, javaweb, null, null, null, <<BLOB>>, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
+2022-04-24 16:25:13.531 [http-nio-8080-exec-1] DEBUG com.lu.mapper.TypeMapper.findAllType - <==      Total: 10
+2022-04-24 16:25:13.531 [http-nio-8080-exec-1] INFO  com.lu.aspect.LogAspect - Result : index

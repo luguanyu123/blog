@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head  th:replace="_fragments :: head(~{::title})">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+
+  <!--导航-->
+  <nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+
+  </nav>
+
+  <!--中间内容-->
+  <div  class="m-container m-padded-tb-big animated fadeIn">
+    <div class="ui container">
+
+      <div class="ui stackable grid">
+        <div class="eleven wide column">
+          <div class="ui segment">
+            <img th:src="@{/images/myavatar.jpg}" alt="" class="ui rounded image">
+          </div>
+        </div>
+        <div class="five wide column">
+          <div class="ui top attached segment">
+            <div class="ui header">关于我</div>
+          </div>
+          <div class="ui attached segment">
+            <p class="m-text">2022届南昌工程学院应届毕业生，计算机科学与技术专业，开设此博客的目的有二：</p>
+            <p class="m-text">1、巩固所学知识</p>
+            <p class="m-text">2、构建一个自己的分享平台</p>
+            <p class="m-text">希望我的博客对看到此站的你有所帮助😄</p>
+          </div>
+          <div class="ui attached segment">
+            <div class="ui orange basic left pointing label">编程</div>
+            <div class="ui orange basic left pointing label">动漫</div>
+            <div class="ui orange basic left pointing label">电影</div>
+            <div class="ui orange basic left pointing label">综艺</div>
+            <div class="ui orange basic left pointing label">日语</div>
+          </div>
+          <div class="ui attached segment">
+            <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
+            <div class="ui teal basic left pointing label m-margin-tb-tiny">MYSQL</div>
+            <div class="ui teal basic left pointing label m-margin-tb-tiny">...</div>
+          </div>
+          <div class="ui bottom attached segment">
+            <a href="#" class="ui wechat circular icon button" data-content="../static/images/wechat.jpg" data-position="bottom center"><i class="weixin icon"></i></a>
+            <a href="#" class="ui qq circular icon button" data-content="834808263" data-position="bottom center"><i class="qq icon"></i></a>
+          </div>
+
+          <div class="ui wechat-qr flowing popup transition hidden">
+            <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 110px">
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <!--底部footer-->
+  <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+      <div class="ui inverted divided stackable grid">
+        <div class="three wide column">
+          <div class="ui inverted link list">
+            <div class="item">
+              <img src="../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+            </div>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced " >最新博客</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item m-text-thin">Springboot</a>
+            <a href="#" class="item m-text-thin">Mybatis</a>
+            <a href="#" class="item m-text-thin">数据结构</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item m-text-thin">WeChat：13970165383</a>
+            <a href="#" class="item m-text-thin">QQ：834808263</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+          <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.0/semantic.min.js"></script>
+  <!--/*/</th:block>/*/-->
+
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.wechat').popup({
+      popup : $('.wechat-qr'),
+      position: 'bottom center'
+    });
+    $('.qq').popup();
+
+  </script>
+</body>
+</html>
